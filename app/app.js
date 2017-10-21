@@ -58,7 +58,7 @@ app.hears(/игр*/i, (ctx) => {
 })
 
 app.hears(/ez|изи|рил|ток|real|talk/, (ctx) => {
-    ctx.reply('https://i.ytimg.com/vi/E-r4s7BvmiE/maxresdefault.jpg');
+    ctx.reply('https://i.ytimg.com/vi/9kqGUpgA9m4/hqdefault.jpg');
 })
 
 app.startPolling();
