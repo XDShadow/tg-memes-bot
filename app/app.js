@@ -9,9 +9,13 @@ app.command('start', ({from, reply}) => {
     reply('Welcome! 🔍');
 });
 
-app.hears(new RegExp(/пидор/), (ctx) => {
+app.hears(new RegExp(/пидор|пидр|pidor|pidr|гей/i), (ctx) => {
     console.log('Пидор прислал сообщение!');
-    ctx.reply('Сам пидор! 😎 📢');
+    ctx.reply('Сам пидор! 🐔');
 });
+
+app.hears(/игр*/i, (ctx) => {
+    ctx.reply('Кто сказал игры? 🎮');
+})
 
 app.startPolling();
