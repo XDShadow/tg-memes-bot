@@ -6,18 +6,12 @@ const app = new Telegraf(BOT_TOKEN, {username: 'tg_memes_bot'});
 
 app.command('start', ({from, reply}) => {
     console.log('Started!');
-    reply('Welcome!');
+    reply('Welcome! 🔍');
 });
 
 app.hears(new RegExp(/пидор/), (ctx) => {
     console.log('Пидор прислал сообщение!');
-    ctx.reply('Сам пидор!');
-});
-
-app.hears(new RegExp(/пошел нахуй/), (ctx) => {
-    console.log('Походу мне пора!');
-    ctx.reply('Прости :(');
-    ctx.leaveChat();
+    ctx.reply('Сам пидор! 😎 📢');
 });
 
 app.startPolling();
