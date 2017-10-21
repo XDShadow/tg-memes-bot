@@ -4,12 +4,12 @@ const BOT_TOKEN = '472750107:AAGxAMx0agxuxlgxUI_N7Hc-rp8qX6Nd6hY';
 
 const app = new Telegraf(BOT_TOKEN, {username: 'tg_memes_bot'});
 
-app.command('start', (ctx) => {
-    let timer = setInterval(() => {
-        ctx.reply('/pidor@SublimeBot');
-        ctx.reply('/spin@spin_everyday_bot');
-    }, 5000);
-});
+// app.command('start', (ctx) => {
+//     let timer = setInterval(() => {
+//         ctx.reply('/pidor@SublimeBot');
+//         ctx.reply('/spin@spin_everyday_bot');
+//     }, 5000);
+// });
 
 app.hears(/прив|hi|hello/i, (ctx) => {
     const replies = ['Приветик', 'Здорова!', 'Ееееее, тут кто-то есть!']
@@ -50,7 +50,7 @@ app.hears(/поц/i, (ctx) => {
         'http://memesmix.net/media/created/0n82ig.jpg',
         'http://memesmix.net/media/created/1ysrxw.jpg'
     ]
-    ctx.replyWithPhoto();
+    ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
 })
 
 app.hears(/игр*/i, (ctx) => {
