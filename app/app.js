@@ -9,19 +9,18 @@ app.hears(/прив|hi|hello/, (ctx) => {
     ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
 });
 
-app.hears(new RegExp(/пидор|пидр|pidor|pidr|гей/i), (ctx) => {
+app.hears(/пидор|пидр|pidor|pidr|гей/i, (ctx) => {
     const replies = ['Сам пидор! 🐔', 'Ты че, ахуел, пидор?! 🐔', 'Кто пидор? Я не пидор!', 'Че сразу пидор то?']
     ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
 });
 
-app.hears(new RegExp(/пидор|пидр|pidor|pidr|гей/i), (ctx) => {
-    const replies = ['Сам пидор! 🐔', 'Ты че, ахуел, пидор?! 🐔', 'Кто пидор? Я не пидор!', 'Че сразу пидор то?']
-    ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
-});
-
-app.hears(new RegExp(/blya|бля/i), (ctx) => {
+app.hears(/blya|бля/i, (ctx) => {
     const replies = ['БЛЯХО', 'Блэд!', 'ТЫ ЧЕ БЛЯ']
-    ctx.reply();
+    ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
+});
+
+app.hears(/Kappa/i, (ctx) => {
+    ctx.replyWithPhoto('http://i0.kym-cdn.com/photos/images/facebook/000/925/494/218.png_large');
 });
 
 app.hears(/игр*/i, (ctx) => {
