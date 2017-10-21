@@ -11,6 +11,13 @@ app.command('start', ({from, reply}) => {
 
 app.hears(new RegExp(/пидор/), (ctx) => {
     console.log('Пидор прислал сообщение!');
-    ctx.reply('Сам пидор! \U0001F47E')
+    ctx.reply('Сам пидор!');
 });
+
+app.hears(new RegExp(/пошел нахуй/), (ctx) => {
+    console.log('Походу мне пора!');
+    ctx.reply('Прости :(');
+    ctx.leaveChat();
+});
+
 app.startPolling();
