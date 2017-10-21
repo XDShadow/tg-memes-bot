@@ -8,7 +8,8 @@ app.command('start', ({from, reply}) => {
     console.log('Started!');
     reply('Welcome!');
 });
-app.hears('/пидор/', (ctx) => {
+
+app.hears(new RegExp(/пидор/), (ctx) => {
     console.log('Пидор прислал сообщение!');
     ctx.reply('Сам пидор!')
 });
