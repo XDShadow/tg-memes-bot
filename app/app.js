@@ -11,6 +11,6 @@ app.command('start', ({from, reply}) => {
 
 app.hears(new RegExp(/пидор/), (ctx) => {
     console.log('Пидор прислал сообщение!');
-    ctx.reply('Сам пидор!')
+    ctx.reply('Сам пидор! :cry:')
 });
 app.startPolling();
