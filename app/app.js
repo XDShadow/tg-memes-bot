@@ -44,14 +44,18 @@ app.hears(/поц/i, (ctx) => {
         'http://memesmix.net/media/created/1ysrxw.jpg'
     ]
     ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
-})
+});
 
 app.hears(/игр*/i, (ctx) => {
     ctx.reply('Кто сказал игры? 🎮');
-})
+});
 
-app.hears(/ez|изи|рил|ток|real|talk|антихайп/, (ctx) => {
+app.hears(/ez|изи|рил|ток|real|talk|антихайп/i, (ctx) => {
     ctx.replyWithPhoto('https://i.ytimg.com/vi/E-r4s7BvmiE/maxresdefault.jpg');
-})
+});
+
+app.hears(/gachi|bass|гачи|басс/i, (ctx) => {
+    ctx.replyWithPhoto('https://yt3.ggpht.com/-hbETsOLQ9Zo/AAAAAAAAAAI/AAAAAAAAAAA/kRAuE3aXj4c/s900-c-k-no-mo-rj-c0xffffff/photo.jpg');
+});
 
 app.startPolling();
