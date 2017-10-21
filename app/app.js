@@ -8,5 +8,8 @@ app.command('start', ({from, reply}) => {
     console.log('Started!');
     reply('Welcome!');
 });
-app.hears('пидор', (ctx) => ctx.reply('Сам пидор!'));
+app.hears('пидор', (ctx) => {
+    console.log('Пидор прислал сообщение!');
+    ctx.reply('Сам пидор!')
+});
 app.startPolling();
