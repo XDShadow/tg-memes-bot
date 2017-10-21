@@ -57,4 +57,8 @@ app.hears(/игр*/i, (ctx) => {
     ctx.reply('Кто сказал игры? 🎮');
 })
 
+app.hears(/ez|изи|рил|ток|real|talk/, (ctx) => {
+    ctx.reply('https://i.ytimg.com/vi/E-r4s7BvmiE/maxresdefault.jpg');
+})
+
 app.startPolling();
