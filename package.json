@@ -1,0 +1,22 @@
+{
+  "name": "tg-memes-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/br1ghts1d3dev/tg-memes-bot.git"
+  },
+  "author": "br1ghts1d3dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/br1ghts1d3dev/tg-memes-bot/issues"
+  },
+  "homepage": "https://github.com/br1ghts1d3dev/tg-memes-bot#readme",
+  "dependencies": {
+    "telegraf": "^3.14.0"
+  }
+}
