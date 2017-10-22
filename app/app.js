@@ -27,12 +27,16 @@ app.hears(/BibleThump/i, (ctx) => {
     ctx.replyWithPhoto('https://ih1.redbubble.net/image.195693002.4115/flat,800x800,075,f.jpg');
 });
 
-app.hears(/\sLUL|\sлул/i, (ctx) => {
+app.hears(/(LUL|лул)\B/i, (ctx) => {
     ctx.replyWithPhoto('https://ih0.redbubble.net/image.370068320.4729/flat,800x800,075,f.u2.jpg');
 });
 
 app.hears(/OMEGALUL|омегалул/i, (ctx) => {
     ctx.replyWithPhoto('https://ih1.redbubble.net/image.364225796.1573/flat,800x800,075,t.jpg');
+});
+
+app.hears('бот, самонь пидоров', (ctx) => {
+    ctx.replyWithMarkup('Эй, пидоры! [Fansik](mention:@fansik) [HappyKeK](mention:@HappyKek)');
 });
 
 app.hears(/поц/i, (ctx) => {
