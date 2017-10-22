@@ -4,7 +4,7 @@ const BOT_TOKEN = '472750107:AAGxAMx0agxuxlgxUI_N7Hc-rp8qX6Nd6hY';
 
 const app = new Telegraf(BOT_TOKEN, {username: 'tg_memes_bot'});
 
-app.hears('бот, самонь пидоров', (ctx) => {
+app.hears(/бот.*(с(а|у)мон.*пид(о|а)р|пид(о|а)р.*с(а|у)мон).*/i, (ctx) => {
     ctx.reply('Эй, пидоры! @fansik @HappyKek @SevenFXD @br1ghts1d3');
 });
 
