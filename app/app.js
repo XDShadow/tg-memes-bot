@@ -4,6 +4,10 @@ const BOT_TOKEN = '472750107:AAGxAMx0agxuxlgxUI_N7Hc-rp8qX6Nd6hY';
 
 const app = new Telegraf(BOT_TOKEN, {username: 'tg_memes_bot'});
 
+app.hears('бот, самонь пидоров', (ctx) => {
+    ctx.replyWithMarkup('Эй, пидоры! [Fansik](mention:@fansik) [HappyKeK](mention:@HappyKek)');
+});
+
 app.hears(/прив|hi|hello/i, (ctx) => {
     const replies = ['Приветик', 'Здорова!', 'Ееееее, тут кто-то есть!']
     ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
@@ -27,16 +31,12 @@ app.hears(/BibleThump/i, (ctx) => {
     ctx.replyWithPhoto('https://ih1.redbubble.net/image.195693002.4115/flat,800x800,075,f.jpg');
 });
 
-app.hears(/(LUL|лул)\B/i, (ctx) => {
+app.hears(/(LUL|лул)\n/i, (ctx) => {
     ctx.replyWithPhoto('https://ih0.redbubble.net/image.370068320.4729/flat,800x800,075,f.u2.jpg');
 });
 
 app.hears(/OMEGALUL|омегалул/i, (ctx) => {
     ctx.replyWithPhoto('https://ih1.redbubble.net/image.364225796.1573/flat,800x800,075,t.jpg');
-});
-
-app.hears('бот, самонь пидоров', (ctx) => {
-    ctx.replyWithMarkup('Эй, пидоры! [Fansik](mention:@fansik) [HappyKeK](mention:@HappyKek)');
 });
 
 app.hears(/поц/i, (ctx) => {
