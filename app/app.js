@@ -5,11 +5,11 @@ const BOT_TOKEN = '472750107:AAGxAMx0agxuxlgxUI_N7Hc-rp8qX6Nd6hY';
 const app = new Telegraf(BOT_TOKEN, {username: 'tg_memes_bot'});
 
 app.hears(/бот.*(с(а|у)мон.*пид(о|а)р|пид(о|а)р.*с(а|у)мон)/i, (ctx) => {
-    ctx.reply('Эй, пидоры! @fansik @HappyKek @SevenFXD @br1ghts1d3');
+    ctx.reply('Эй, пидоры! @fansik @HappyKek @SevenFXD @br1ghts1d3 @XDShadow');
 });
 
 app.hears(/прив|hi|hello/i, (ctx) => {
-    const replies = ['Приветик', 'Здорова!', 'Ееееее, тут кто-то есть!']
+    const replies = ['Приветик', 'Здорова!']
     ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
 });
 
@@ -19,7 +19,7 @@ app.hears(/пидор|пидр|pidor|pidr|гей/i, (ctx) => {
 });
 
 app.hears(/blya|бля/i, (ctx) => {
-    const replies = ['БЛЯХО', 'Блэд!', 'ТЫ ЧЕ БЛЯ']
+    const replies = ['БЛЯХО', 'Блэд!', 'ТЫ ЧЕ БЛЯ', 'БлЯдИнА ЙоБаНаЙа', 'УХХ БЛЭТ']
     ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
 });
 
@@ -48,10 +48,6 @@ app.hears(/поц/i, (ctx) => {
         'http://memesmix.net/media/created/1ysrxw.jpg'
     ]
     ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
-});
-
-app.hears(/игр*/i, (ctx) => {
-    ctx.reply('Кто сказал игры? 🎮');
 });
 
 app.hears(/ez|изи|рил|ток|real|talk|антихайп/i, (ctx) => {
