@@ -42,6 +42,10 @@ app.hears(/OMEGALUL|омегалул/i, (ctx) => {
 
 app.hears(/SIEG(\s|$)|HEIL(\s|$)|ZIG(\s|$)|ЗИГ/i, ctx => {
     ctx.replyWithPhoto('https://i.ytimg.com/vi/R7cgDLJEohg/maxresdefault.jpg');
+});
+
+app.hears(/OMEGAADIK/i, ctx => {
+    ctx.replyWithPhoto('https://puu.sh/ySPN0/5017b7ec3d.jpg');
 })
 
 app.hears(/поц/i, (ctx) => {
