@@ -9,8 +9,8 @@ app.hears(/бот.*(с(а|у)мон.*пид(о|а)р|пид(о|а)р.*с(а|у)�
     ctx.reply('Эй, пидоры! @fansik @HappyKek @SevenFXD @br1ghts1d3 @XDShadow');
 });
 
-app.hears(/прив*|hi(\s|$)|hello(\s|$)/i, (ctx) => {
-    const replies = ['Приветик', 'Здорова!']
+app.hears(/прив(\s|$)|hi(\s|$)|hello(\s|$)/i, (ctx) => {
+    const replies = ['Приветик', 'Здорова!', 'Здравствуй!']
     ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
 });
 
