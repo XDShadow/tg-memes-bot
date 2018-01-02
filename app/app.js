@@ -39,6 +39,10 @@ app.hears(/OMEGALUL|омегалул/i, (ctx) => {
     ctx.replyWithPhoto('https://ih1.redbubble.net/image.364225796.1573/flat,800x800,075,t.jpg');
 });
 
+app.hears(/SIEG|HEIL|ZIG/i, ctx => {
+    ctx.replyWithPhoto('https://i.ytimg.com/vi/R7cgDLJEohg/maxresdefault.jpg');
+})
+
 app.hears(/поц/i, (ctx) => {
     let replies = [
         'http://memesmix.net/media/created/03f9l0.jpg',
