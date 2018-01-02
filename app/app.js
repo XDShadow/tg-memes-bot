@@ -63,10 +63,10 @@ app.hears(/(gachi|bass|гачи|басс)(\s|$)/i, (ctx) => {
     ctx.replyWithPhoto('https://yt3.ggpht.com/-hbETsOLQ9Zo/AAAAAAAAAAI/AAAAAAAAAAA/kRAuE3aXj4c/s900-c-k-no-mo-rj-c0xffffff/photo.jpg');
 });
 
-app.command('markup', ({reply}) => {
+app.command('sum', ({reply}) => {
     return reply( 
         Markup
-            .keyboard(['hi', 'hello'])
+            .keyboard(['@fansik', '@HappyKek', '@SevenFXD', '@br1ghts1d3', '@XDShadow'])
             .oneTime()
             .resize()
             .extra()
