@@ -48,11 +48,11 @@ app.hears(/OMEGAADIK/i, ctx => {
     ctx.replyWithPhoto('https://puu.sh/ySPN0/5017b7ec3d.jpg');
 });
 
-app.hears(/дво(е|и)чка(\s|$)|въеби(\s|$)|въебать(\s|$)|базуки(\s|$)|уебать(\s|$)|уеби(\s|$)|dvoechka(\s|$)/i, (ctx) => {
+app.hears(/двоечка|въеби(\s|$)|въебать(\s|$)|базуки(\s|$)|уебать(\s|$)|уеби(\s|$)|dvoechka(\s|$)/i, (ctx) => {
     ctx.replyWithPhoto('https://puu.sh/ySSk4/0c0215c34f.jpg');
 });
 
-app.hears(/казах(\s|$)|kazah(\s|$)i, ctx => {
+app.hears(/казах|kazah(\s|$)/i, ctx => {
     ctx.replyWithPhoto('http://puu.sh/ySSpl/a3f908c8ec.jpg');
 })
 
