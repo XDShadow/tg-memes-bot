@@ -1,6 +1,5 @@
 const Telegraf = require('telegraf');
-const Extra = require('telegraf/extra')
-const Markup = require('telegraf/markup');
+const Markup = Telegraf.Markup;
 
 const BOT_TOKEN = '472750107:AAGxAMx0agxuxlgxUI_N7Hc-rp8qX6Nd6hY';
 
