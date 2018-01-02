@@ -9,8 +9,8 @@ app.hears(/бот.*(с(а|у)мон.*пид(о|а)р|пид(о|а)р.*с(а|у)�
     ctx.reply('Эй, пидоры! @fansik @HappyKek @SevenFXD @br1ghts1d3 @XDShadow');
 });
 
-app.hears(/прив(\s|$)|hi(\s|$)|hello(\s|$)/i, (ctx) => {
-    const replies = ['Приветик', 'Здорова!', 'Здравствуй!']
+app.hears(/(прив|hi(\s|$)|hello(\s|$))/i, (ctx) => {
+    const replies = ['Приветик', 'Здорова!']
     ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
 });
 
@@ -67,7 +67,7 @@ app.hears(/поц/i, (ctx) => {
     ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
 });
 
-app.hears(/(ez|изи|рил|ток|real|talk|антихайп)(\s|$)/i, (ctx) => {
+app.hears(/(\s|^)(ez|изи|рил|ток|real|talk|антихайп)(\s|$)/i, (ctx) => {
     ctx.replyWithPhoto('https://i.ytimg.com/vi/E-r4s7BvmiE/maxresdefault.jpg');
 });
 
