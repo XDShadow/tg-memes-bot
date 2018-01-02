@@ -64,12 +64,9 @@ app.hears(/(gachi|bass|гачи|басс)(\s|$)/i, (ctx) => {
 });
 
 app.command('sum', ({reply}) => {
-    return replyWithMarkup('', 
+    return reply('', 
         Markup
             .keyboard(['@fansik', '@HappyKek', '@SevenFXD', '@br1ghts1d3', '@XDShadow'])
-            .oneTime()
-            .resize()
-            .extra()
     )
 });
 
