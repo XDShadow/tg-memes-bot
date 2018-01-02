@@ -59,7 +59,7 @@ app.hears(/поц/i, (ctx) => {
     ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
 });
 
-app.hears(/(ez|изи|рил|ток|real|talk|антихайп)(\s|$)/i, (ctx) => {
+app.hears(/(\s|^)(ez|изи|рил|ток|real|talk|антихайп)(\s|$)/i, (ctx) => {
     ctx.replyWithPhoto('https://i.ytimg.com/vi/E-r4s7BvmiE/maxresdefault.jpg');
 });
 
