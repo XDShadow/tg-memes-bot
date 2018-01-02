@@ -63,8 +63,8 @@ app.hears(/(gachi|bass|гачи|басс)(\s|$)/i, (ctx) => {
     ctx.replyWithPhoto('https://yt3.ggpht.com/-hbETsOLQ9Zo/AAAAAAAAAAI/AAAAAAAAAAA/kRAuE3aXj4c/s900-c-k-no-mo-rj-c0xffffff/photo.jpg');
 });
 
-app.hears(/markup/i, ctx => {
-    ctx.reply('Text here: ', Markup
+app.command('markup', ({reply}) => {
+    return reply('Text here: ', Markup
         .keyboard(['hi', 'hello'])
         .oneTime()
         .resize()
