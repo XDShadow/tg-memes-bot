@@ -56,7 +56,7 @@ app.hears(/казах|kazah(\s|$)/i, ctx => {
     ctx.replyWithPhoto('http://puu.sh/ySSpl/a3f908c8ec.jpg');
 });
 
-app.hears(/ч(е|о).*(п(a|о)ц(а|о)ны|п(a|о)ц(а|о)ны.*(а|о)ним(е|э))/i, (ctx) => {
+app.hears(/(ч(е|ё).*пацан*)|(а|о)н(и|е)м(e|э)/i, (ctx) => {
     ctx.replyWithPhoto('https://puu.sh/ySUKN/c1ba9b813e.jpg');
 })
 
