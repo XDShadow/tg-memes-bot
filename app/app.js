@@ -63,11 +63,7 @@ app.hears(/(gachi|bass|гачи|басс)(\s|$)/i, (ctx) => {
     ctx.replyWithPhoto('https://yt3.ggpht.com/-hbETsOLQ9Zo/AAAAAAAAAAI/AAAAAAAAAAA/kRAuE3aXj4c/s900-c-k-no-mo-rj-c0xffffff/photo.jpg');
 });
 
-app.commend('members', ({reply, getChatMember}) => {
-    reply(getChatMember());
-})
-
-app.command('sum', ({reply, getChatMember}) => {
+app.command('sum', ({reply}) => {
     return reply('Summon pidorasov', 
         Markup
             .keyboard(['@fansik', '@HappyKek', '@SevenFXD', '@br1ghts1d3', '@XDShadow'])
