@@ -1,4 +1,5 @@
 const Telegraf = require('telegraf');
+const Extra = require('telegraf/extra')
 const Markup = require('telegraf/markup');
 
 const BOT_TOKEN = '472750107:AAGxAMx0agxuxlgxUI_N7Hc-rp8qX6Nd6hY';
@@ -64,11 +65,12 @@ app.hears(/(gachi|bass|гачи|басс)(\s|$)/i, (ctx) => {
 });
 
 app.command('markup', ({reply}) => {
-    return reply('Text here: ', Markup
-        .keyboard(['hi', 'hello'])
-        .oneTime()
-        .resize()
-        .extra()
+    return reply('Text here: ', 
+        Markup
+            .keyboard(['hi', 'hello'])
+            .oneTime()
+            .resize()
+            .extra()
     )
 });
 
