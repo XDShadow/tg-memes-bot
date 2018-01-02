@@ -67,6 +67,9 @@ app.command('sum', ({reply}) => {
     return reply('', 
         Markup
             .keyboard(['@fansik', '@HappyKek', '@SevenFXD', '@br1ghts1d3', '@XDShadow'])
+            .oneTime()
+            .resize()
+            .extra()
     )
 });
 
