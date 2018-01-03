@@ -71,7 +71,7 @@ app.hears(/(ч(е|ё).*пацан*)|(а|о)н(и|е)м(e|э)/i, (ctx) => {
         'https://puu.sh/ySUKN/c1ba9b813e.jpg',
         'https://puu.sh/yTnfK/ddcd6409e6.jpg',
         'https://puu.sh/yTnpu/3bc0a6e5fb.jpg'
-    ]
+    ];
     ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
 });
 
