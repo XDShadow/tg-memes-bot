@@ -46,6 +46,15 @@ app.hears(/SIEG(\s|$)|HEIL(\s|$)|ZIG(\s|$)|ЗИГ/i, ctx => {
 
 app.hears(/OMEGAADIK/i, ctx => {
     ctx.replyWithPhoto('https://puu.sh/ySPN0/5017b7ec3d.jpg');
+})
+
+app.hears(/казах|kazah(\s|$)/i, ctx => {
+    let replies = [
+        'https://puu.sh/ySSpl/a3f908c8ec.jpg',
+        'https://puu.sh/yTnDT/8f7d7d254f.jpg',
+        'https://puu.sh/yTnJs/c3e7add426.jpg'
+    ]
+    ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
 });
 
 app.hears(/въеби(\s|$)|въебать(\s|$)|уебать(\s|$)|уеби(\s|$)|перееби(\s|$)|переебать(\s|$)/i, (ctx) => {
@@ -55,10 +64,6 @@ app.hears(/въеби(\s|$)|въебать(\s|$)|уебать(\s|$)|уеби(\s|
         'https://puu.sh/yTndG/2e2287d60f.jpg'
     ]
     ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
-});
-
-app.hears(/казах|kazah(\s|$)/i, ctx => {
-    ctx.replyWithPhoto('http://puu.sh/ySSpl/a3f908c8ec.jpg');
 });
 
 app.hears(/(ч(е|ё).*пацан*)|(а|о)н(и|е)м(e|э)/i, (ctx) => {
