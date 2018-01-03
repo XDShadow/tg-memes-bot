@@ -46,7 +46,7 @@ app.hears(/SIEG(\s|$)|HEIL(\s|$)|ZIG(\s|$)|ЗИГ/i, ctx => {
 
 app.hears(/OMEGAADIK/i, ctx => {
     ctx.replyWithPhoto('https://puu.sh/ySPN0/5017b7ec3d.jpg');
-})
+});
 
 app.hears(/казах|kazah(\s|$)/i, ctx => {
     let replies = [
