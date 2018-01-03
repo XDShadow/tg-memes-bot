@@ -15,7 +15,7 @@ app.hears(/(прив|hi(\s|$)|hello(\s|$))/i, (ctx) => {
 });
 
 app.hears(/пидор(\s|$)|пидр(\s|$)|pidor(\s|$)|pidr(\s|$)|гей(\s|$)|homo(\s|$)/i, (ctx) => {
-    const replies = ['Сам пидор! 🐔', 'Ты че, ахуел, пидор?! 🐔', 'Кто пидор? Я не пидор!', 'Че сразу пидор то?', 'Да, тот еще пидор!']
+    const replies = ['Сам пидор! 🐔', 'Ты че, ахуел, пидор?! 🐔', 'Кто пидор? Я не пидор!', 'Че сразу пидор то?', 'Да, тот еще пидор!', 'Да всего-то раз было!', 'Зато вилкой в глаз не получил!']
     ctx.reply(replies[Math.floor(Math.random() * replies.length)]);
 });
 
@@ -48,17 +48,27 @@ app.hears(/OMEGAADIK/i, ctx => {
     ctx.replyWithPhoto('https://puu.sh/ySPN0/5017b7ec3d.jpg');
 });
 
-app.hears(/двоечка|въеби(\s|$)|въебать(\s|$)|базуки(\s|$)|уебать(\s|$)|уеби(\s|$)|dvoechka(\s|$)/i, (ctx) => {
-    ctx.replyWithPhoto('https://puu.sh/ySSk4/0c0215c34f.jpg');
-});
-
 app.hears(/казах|kazah(\s|$)/i, ctx => {
     ctx.replyWithPhoto('http://puu.sh/ySSpl/a3f908c8ec.jpg');
+})
+
+app.hears(/въеби(\s|$)|въебать(\s|$)|уебать(\s|$)|уеби(\s|$)|перееби(\s|$)|переебать(\s|$)/i, (ctx) => {
+    let replies = [
+        'https://puu.sh/ySSk4/0c0215c34f.jpg',
+        'https://puu.sh/yTndj/96e14c5598.jpg',
+        'https://puu.sh/yTndG/2e2287d60f.jpg'
+    ]
+    ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
 });
 
-app.hears(/че.*(п(a|о)ц(а|о)ны|п(a|о)ц(а|о)ны.*(а|о)ним(е|э))/i, (ctx) => {
-    ctx.replyWithPhoto('https://puu.sh/ySUKN/c1ba9b813e.jpg');
-})
+app.hears(/(ч(е|ё).*пацан*)|(а|о)н(и|е)м(e|э)/i, (ctx) => {
+    let replies = [
+        'https://puu.sh/ySUKN/c1ba9b813e.jpg',
+        'https://puu.sh/yTnfK/ddcd6409e6.jpg',
+        'https://puu.sh/yTnpu/3bc0a6e5fb.jpg'
+    ]
+    ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
+});
 
 app.hears(/поц/i, (ctx) => {
     let replies = [
