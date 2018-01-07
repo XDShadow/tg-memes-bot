@@ -50,8 +50,8 @@ app.hears(/OMEGAADIK/i, ctx => {
 
 app.hears(/казах|kazah(\s|$)/i, ctx => {
     let replies = [
-        'https://puu.sh/ySSpl/a3f908c8ec.jpg',
-        'https://puu.sh/yTnDT/8f7d7d254f.jpg',
+        'https://puu.sh/yWpF0/9f37bf84d0.jpg',
+        'http://puu.sh/yWpKF/58cf6cce34.jpg',
         'https://puu.sh/yTnJs/c3e7add426.jpg'
     ]
     ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
