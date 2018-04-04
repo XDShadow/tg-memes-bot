@@ -32,6 +32,10 @@ app.hears(/BibleThump(\s|$)/i, (ctx) => {
     ctx.replyWithPhoto('https://ih1.redbubble.net/image.195693002.4115/flat,800x800,075,f.jpg');
 });
 
+app.hears(/нет ты($)/i, (ctx) => {
+    ctx.reply('Нет, ты');
+});
+
 app.hears(/\b(LUL(\s|$)|лул(\s|$))/i, (ctx) => {
     ctx.replyWithPhoto('https://ih0.redbubble.net/image.370068320.4729/flat,800x800,075,f.u2.jpg');
 });
