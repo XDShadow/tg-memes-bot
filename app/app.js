@@ -32,7 +32,7 @@ app.hears(/BibleThump(\s|$)/i, (ctx) => {
     ctx.replyWithPhoto('https://ih1.redbubble.net/image.195693002.4115/flat,800x800,075,f.jpg');
 });
 
-app.hears(/нет ты($)/i, (ctx) => {
+app.hears(/нет(,|, | )ты($)/i, (ctx) => {
     ctx.reply('Нет, ты');
 });
 
