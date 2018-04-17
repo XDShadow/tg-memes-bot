@@ -32,6 +32,10 @@ app.hears(/BibleThump(\s|$)/i, (ctx) => {
     ctx.replyWithPhoto('https://ih1.redbubble.net/image.195693002.4115/flat,800x800,075,f.jpg');
 });
 
+app.hears(/нет(,|, | )ты($)/i, (ctx) => {
+    ctx.reply('Нет, ты');
+});
+
 app.hears(/\b(LUL(\s|$)|лул(\s|$))/i, (ctx) => {
     ctx.replyWithPhoto('https://ih0.redbubble.net/image.370068320.4729/flat,800x800,075,f.u2.jpg');
 });
@@ -49,11 +53,13 @@ app.hears(/OMEGAADIK/i, ctx => {
 });
 
 app.hears(/казах|kazah/i, ctx => {
-    if(Math.floor(Math.random() * 100) < 30) return;
+    if(Math.floor(Math.random() * 100) < 65) return;
     let  replies = [
-        'https://puu.sh/ySSpl/a3f908c8ec.jpg',
-        'https://puu.sh/yTnDT/8f7d7d254f.jpg',
-        'https://puu.sh/yTnJs/c3e7add426.jpg'
+        'https://puu.sh/yWpF0/9f37bf84d0.jpg',
+        'https://puu.sh/yZYje/1b580981c9.jpg',
+        'https://puu.sh/yTnJs/c3e7add426.jpg',
+        'https://puu.sh/yZYfG/a4e9b3724d.jpg',
+        'https://puu.sh/yZYiG/54358b831b.jpg'
     ]
     ctx.replyWithPhoto(replies[Math.floor(Math.random() * replies.length)]);
 });
